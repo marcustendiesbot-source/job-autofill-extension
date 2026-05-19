@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Chrome extension build artifacts
+*.crx
+*.pem
+*.zip
+
+# Local job post saves (user data)
+*.txt
+
+# Node (if anyone adds build tooling later)
+node_modules/
+package-lock.json
+
+# Personal data backups — never commit these
+qa_restore.json
+qa_backup*.json
