@@ -13,6 +13,8 @@ No account. No subscription. Your data never leaves your browser.
 
 ![JSE demo](assets/demo.gif)
 
+> **🚀 Public beta** — live on GitHub. Built and battle-tested across 8+ ATS platforms over months of real job applications. Feedback and PRs welcome.
+
 ---
 
 ## Why this exists
