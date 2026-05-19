@@ -22,3 +22,9 @@ package-lock.json
 # Personal data backups — never commit these
 qa_restore.json
 qa_backup*.json
+
+# Local environment / credentials — never commit
+.env
+
+# Local test files — never commit
+Test/
