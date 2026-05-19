@@ -40,12 +40,4 @@ Please include:
 - Browser console output (DevTools → Console on the application page)
 - Any `[AutoFill matchQA NEARMISS]` log lines visible in the console
 
-## Known Blocked Domains
-
-The extension cannot run on these domains due to platform restrictions:
-- `jobs.rbc.com` (Avature)
-- `career17.sapsf.com` (SAP SuccessFactors)
-- `jobs.dayforcehcm.com` (Dayforce)
-- `linkedin.com`
-
 PRs to add support for these are welcome if a workaround is found.
