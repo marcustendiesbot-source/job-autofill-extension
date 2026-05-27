@@ -1,5 +1,5 @@
 # CONTEXT.md — Job Search Project
-# Andrei · Toronto, ON · Last updated: May 2026 (session 8)
+# Andrei · Toronto, ON · Last updated: May 2026 (session 10)
 
 > This file is the source of truth for Andrei's job search project.
 > For coding rules and extension behaviour, see CLAUDE.md.
@@ -69,7 +69,7 @@ File location: *(update with actual path)*
 ## Tools & Workflow
 
 ### Job Application AutoFill Chrome Extension
-- **Version:** 4.0 (public release tag: v1.0.0)
+- **Version:** 4.0 (public release tag: v4.0.0)
 - **GitHub:** https://github.com/marcustendiesbot-source/job-autofill-extension (public beta — live)
 - **Location:** `Desktop/Claude/job-autofill-extension/`
 - **Install:** `chrome://extensions/` → Developer Mode → Load Unpacked
