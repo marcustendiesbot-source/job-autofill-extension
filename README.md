@@ -7,7 +7,7 @@ Free, local, and works on the hard ones — SAP SuccessFactors, Dayforce, and Wo
 No account. No subscription. Your data never leaves your browser.
 
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-4.0.0-blue)
 ![Free](https://img.shields.io/badge/free-forever-brightgreen)
 ![Local](https://img.shields.io/badge/storage-local%20only-blue)
 
@@ -101,8 +101,8 @@ API key — add yours in the Settings tab. No key needed for standard autofill.
 manifest.json     Chrome MV3 manifest
 content.js        Fill engine, label extractor, field scanner, iframe relay
 popup.html        Side panel UI (3 tabs: Fill, Q&A, Settings)
-popup.js          UI logic, storage helpers, Learn modal, Save Job Post
-background.js     Service worker — opens side panel on icon click
+popup.js          UI logic, storage helpers, fill orchestrator, Learn modal, Save Job Post
+background.js     Service worker — opens side panel, proxies AI Guess API calls
 assets/           Demo GIF and screenshots
 ```
 
@@ -121,6 +121,12 @@ assets/           Demo GIF and screenshots
   private tag; main frame collects results, times out at 2500ms
 - **File System Access API** — save folder handle stored in IndexedDB
   (not `chrome.storage` — handles aren't serialisable there)
+- **Scored resume input detection** — scores all file inputs by label/attr/accept
+  signals; prevents injecting resume into cover letter or photo upload fields
+- **A→B→C→D fill orchestrator** — resume upload → Q&A fill → AI Guess →
+  AI review modal; each step awaits completion before the next begins
+- **MutationObserver page settle** — 800ms quiet period after resume upload,
+  8s hard cap; prevents filling before the page has re-rendered
 
 ## Privacy
 
